@@ -1,189 +1,188 @@
-# Bicycle Rental Prediction Project
+# 🚲 Bicycle Rental Prediction Project
 
-## Introduction
+## 🧠 Introduction
 
-The goal of this project is to predict the number of bicycle rentals per hour based on various features such as weather conditions, time of day, and other relevant factors.
+The goal of this project is to predict the number of bicycle rentals per hour based on features such as weather conditions, time of day, and seasonal factors. Accurate forecasting can assist in resource planning, station balancing, and infrastructure decisions for bike-sharing systems.
 
-## Project Overview
+---
 
-In this project, we develop and evaluate multiple machine-learning models to accurately forecast bicycle rental demand. The models include:
-- TensorFlow neural network
-- LightGBM
-- Random Forest
-- Gradient Boosting
-- XGBoost
+## 🔍 At a Glance
 
-## Project Structure
-```
+| Item               | Details                                   |
+|--------------------|-------------------------------------------|
+| Task               | Regression – Predict hourly bike rentals  |
+| Dataset            | Kaggle – Proton X TF09 Competition        |
+| Algorithms         | Neural Network, LightGBM, XGBoost, RF     |
+| Evaluation Metrics | MAE, RMSE                                 |
+| Tools              | Python, Scikit-learn, TensorFlow, LightGBM|
+
+---
+
+## 🗂️ Project Structure
+```bash
 bicycle-rental-prediction/
-│
-├── data/
-│   ├── trainDataset.csv                              # Training dataset
-│   ├── submissionDataset.csv                         # Testing dataset
-│   └── submissionDataset_with_predictions.csv        # New dataset for making predictions
-│
-├── plots/
-│   ├── eda/                                          # Directory to save EDA plots
-│   ├── visualization/                                # Directory to save data visualization plots
-│   └── statistical_analysis/                         # Directory to save statistical analysis plots
-│
-├── src/
-│   ├── __init__.py                                   # Init file to treat the directory as a package
-│   ├── data_preprocessing.py                         # Script for data preprocessing
-│   ├── eda.py                                        # Script for exploratory data analysis
-│   ├── modeling.py                                   # Script for model definitions and hyperparameter tuning
-│   ├── train_and_evaluate.py                         # Script to train and evaluate models, selecting the best one
-│   ├── predict.py                                    # Script to make predictions using the best model
-│   ├── visualization.py                              # Script for data visualization
-│   └── statistical_analysis.py                       # Script for statistical analysis
-│
-├── requirements.txt                                  # File listing the required Python packages
-├── README.md                                         # Project documentation
-└── .gitignore                                        # File specifying which files to ignore in version control
-
+├── data/                                 # Raw & processed datasets
+├── plots/                                # Visual output directories
+│   ├── eda/
+│   ├── visualization/
+│   └── statistical_analysis/
+├── src/                                  # Source code scripts
+│   ├── data_preprocessing.py
+│   ├── eda.py
+│   ├── modeling.py
+│   ├── train_and_evaluate.py
+│   ├── predict.py
+│   ├── visualization.py
+│   └── statistical_analysis.py
+├── requirements.txt
+├── README.md                             # This file
+└── .gitignore
 ```
 
-## Motivation
+---
 
-Accurate prediction of bicycle rentals can help in resource allocation, demand forecasting, and improving the efficiency of bike-sharing systems.
+## 🎯 Motivation
+Accurate prediction of bicycle rentals can help in:
+- Optimizing inventory of bicycles at stations
+- Predicting peak usage periods
+- Supporting decision-making for city planners
 
-## Setup
+---
 
-### Environment Setup
+## ⚙️ Environment Setup
 
-To set up your environment, follow these steps:
+```bash
+# 1. Clone the repository
+$ git clone https://github.com/juliemai16/bicycle-rental-prediction.git
+$ cd bicycle-rental-prediction
 
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/juliemai16/bicycle-rental-prediction.git
-    cd bicycle-rental-prediction
-    ```
+# 2. Create and activate a virtual environment
+$ python -m venv venv
+$ source venv/bin/activate  # Windows: venv\Scripts\activate
 
-2. Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+# 3. Install dependencies
+$ pip install -r requirements.txt
+```
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
 
+## 📊 Dataset Overview
 
-## Data
+The dataset includes hourly data for two years with the following features:
 
-### Data Collection
+- `season`, `yr`, `mnth`, `hr`, `holiday`, `weekday`, `workingday`
+- `weathersit`, `temp`, `atemp`, `hum`
+- `cnt` – total rental count (target)
 
-The dataset contains hourly rental data from the bike-sharing system. The features include:
-- `id`: Record ID
-- `season`: Season (1: Spring, 2: Summer, 3: Fall, 4: Winter)
-- `yr`: Year (0: 2011, 1: 2012)
-- `mnth`: Month (1 to 12)
-- `hr`: Hour (0 to 23)
-- `holiday`: Holiday (0: No, 1: Yes)
-- `weekday`: Day of the week
-- `workingday`: Working day (0: No, 1: Yes)
-- `weathersit`: Weather situation (1 to 4)
-- `temp`: Normalized temperature
-- `atemp`: Normalized feeling temperature
-- `hum`: Normalized humidity
-- `cnt`: Count of total rental bikes
+### Preprocessing Steps
+- Handling missing values (if any)
+- Feature scaling and encoding
+- Train-test splitting
 
-### Data Preprocessing
+---
 
-Data preprocessing includes handling missing values, encoding categorical variables, and scaling numerical features.
+## 🔎 Exploratory Data Analysis (EDA)
 
-## Exploratory Data Analysis (EDA)
+EDA was performed to understand trends, patterns, and relationships:
+- Distribution of hourly rentals
+- Impact of weather and holidays
+- Peak usage by hour/day/month
 
-### EDA involves:
-- Understanding the distribution of the target variable
-- Analyzing relationships between features and the target
-- Identifying patterns and anomalies in the data
+📁 Scripts: `src/eda.py`  
+📷 Output: `plots/eda/`
 
-EDA scripts are located in `src/eda.py` and save figures in `plots/eda`.
+---
 
-## Data Visualization
+## 📊 Data Visualization
 
-Data visualization techniques are used to:
-- Visualize the distribution of bicycle rentals
-- Explore temporal trends (e.g., rentals by hour, day, month)
-- Examine the impact of weather conditions on rentals
+Visualizations helped validate assumptions and identify nonlinear trends:
+- Correlation heatmaps
+- Line plots of rentals over time
+- Bar charts comparing rentals by season/hour
 
-Visualization scripts are located in `src/visualization.py` and save figures in `plots/visualization`.
+📁 Script: `src/visualization.py`  
+📷 Output: `plots/visualization/`
 
-## Statistical Analysis
+---
 
-Statistical analysis is performed to:
-- Identify significant features
-- Understand correlations between features and the target variable
+## 📈 Statistical Analysis
 
-Statistical analysis scripts are located in `src/statistical_analysis.py` and save figures in `plots/statistical_analysis`.
+Statistical tests were used to:
+- Determine feature importance
+- Understand significant seasonal/temporal effects
 
-## Modeling
+📁 Script: `src/statistical_analysis.py`  
+📷 Output: `plots/statistical_analysis/`
 
-### Model Architecture
+---
 
-We implement and compare several machine learning models, including:
-- A neural network using TensorFlow
-- Gradient boosting models (LightGBM, XGBoost)
-- Random Forest
+## 🤖 Modeling Approach
 
-### Model Training
+We implemented multiple ML models and compared performance:
 
-Models are trained using the preprocessed data. Key steps include:
-- Splitting data into training and validation sets
-- Hyperparameter tuning
-- Early stopping to prevent overfitting
+### Algorithms Used
+- ✅ TensorFlow Neural Network
+- ✅ LightGBM, XGBoost, Gradient Boosting
+- ✅ Random Forest
+
+### Training Workflow
+- Data split (train/validation)
+- Cross-validation & hyperparameter tuning
+- Early stopping (for neural network)
 
 ### Evaluation Metrics
+- **MAE** (Mean Absolute Error)
+- **RMSE** (Root Mean Squared Error)
 
-Model performance is evaluated using:
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
+📁 Script: `src/train_and_evaluate.py`
 
-## Deployment
+---
 
-### Deployment Instructions
+## 📦 Deployment
 
-To deploy the best model for making predictions on new data:
+### Prediction on New Data
 
-1. Ensure the preprocessed data is available.
-2. Load the saved model and preprocessor.
-3. Use the model to make predictions on the new data.
+```bash
+# 1. Ensure preprocessed data exists
+# 2. Run prediction script
+$ python src/predict.py
+```
+Predictions are saved to `data/submissionDataset_with_predictions.csv`
 
+---
 
-## Results
+## 📈 Results & Discussion
 
-### Performance Evaluation
+### Evaluation Summary
+- LightGBM and XGBoost outperformed baseline models
+- Neural Network performed well but was sensitive to hyperparameters
+- Clear patterns detected based on weather and time-of-day features
 
-Model performance is summarized with metrics and visualizations. Key insights include:
-- Comparison of model performance
-- Analysis of prediction accuracy
+### Key Insights
+- Weather, hour, and working day status are strong predictors
+- Holidays decrease rental volume except during certain seasons
 
-### Discussion
+---
 
-Discuss the results, including:
-- Model strengths and weaknesses
-- Potential improvements
-- Implications for real-world applications
+## 🧭 Future Work
 
-## Contributing
+- Test time-series-based models (e.g., LSTM, Prophet)
+- Include external events or real-time weather feeds
+- Deploy as an API using FastAPI
 
-### Contribution Guidelines
+---
 
-To contribute to this project:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
+## 🤝 Contributing
 
-## License
+```bash
+# To contribute:
+1. Fork this repo
+2. git checkout -b feature/your-feature-name
+3. Commit & push your changes
+4. Open a pull request 🎉
+```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
 
-## References
-
-- [Kaggle Competition: Proton X TF 09 - Bài toán dự đoán xe đạp](https://www.kaggle.com/competitions/proton-x-tf-09-bai-toan-du-doan-xe-dap/overview)
-- Relevant research papers and articles on bicycle rental prediction
+## 🪪 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
