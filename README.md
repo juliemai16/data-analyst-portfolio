@@ -1,4 +1,4 @@
-# 📊 Senior Data Analyst Portfolio
+# 🛠️ Data Science & Analytics Portfolio
 
 I help organizations make smarter, faster decisions by turning messy data into meaningful analytics and interactive visualizations.
 
