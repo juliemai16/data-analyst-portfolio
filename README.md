@@ -1,20 +1,36 @@
-# 🛠️ Data Science & Analytics Portfolio
+# 🧠 Data Science & Analytics Portfolio
 
-I help organizations make smarter, faster decisions by turning messy data into meaningful analytics and interactive visualizations.
+I help organizations make smarter, faster decisions by leveraging data storytelling, machine learning, and interactive dashboards.
 
-## 🔍 Core Skills
-- SQL, Python (Pandas, NumPy, Scikit-learn)
-- Power BI, Tableau
-- Data storytelling & business insights
-- ETL pipelines, API data integration
-- Statistical modeling & forecasting
+---
 
-## 📁 Highlighted Projects
+## 💡 Core Skills
 
-1. [📈 Customer Segmentation with K-Means].
-2. [📊 Sales Dashboard in Power BI].
-3. [🧠 Churn Prediction using Logistic Regression].
+- **Programming**: Python (Pandas, NumPy, Scikit-learn), SQL  
+- **Visualization Tools**: Power BI, Tableau  
+- **Data Modeling**: Clustering, Regression, Forecasting  
+- **Workflow**: ETL pipelines, API integration, automation  
+- **Communication**: Business insight generation, executive reporting
 
-## 📫 Contact
-- 📧 Email: mngocnhan16@gmail.com
-- 💼 LinkedIn: linkedin.com/in/ngocnhan-mai-482419182/
+---
+
+## 🚀 Featured Projects
+
+| Project | Description |
+|--------|-------------|
+| [📈 Customer Segmentation with K-Means](projects/customer-segmentation/) | Clustered customers based on behavior & spending to guide targeted marketing |
+| [📊 Sales Performance Dashboard (Power BI)](dashboards/sales-performance/sales-performance.md) | Interactive dashboard for tracking sales KPIs and identifying underperforming products |
+| [🚲 Bicycle Rental Demand Forecasting](projects/bicycle-rental-prediction/) | Built regression models (XGBoost, LightGBM, Neural Network) to predict hourly bike rental volume based on weather and time features |
+
+> 📎 For more projects: explore the `projects/` and `dashboards/` folders in this repository.
+
+---
+
+## 📫 Let's Connect
+
+- 📧 Email: [mngocnhan16@gmail.com](mailto:mngocnhan16@gmail.com)  
+- 💼 LinkedIn: [linkedin.com/in/ngocnhan-mai-482419182](https://linkedin.com/in/ngocnhan-mai-482419182)
+
+---
+
+Thanks for visiting my portfolio!
