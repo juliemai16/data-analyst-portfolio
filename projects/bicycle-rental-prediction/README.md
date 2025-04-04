@@ -74,6 +74,8 @@ The dataset includes hourly data for two years with the following features:
 - `weathersit`, `temp`, `atemp`, `hum`
 - `cnt` – total rental count (target)
 
+![Boxplots of Features](boxplots_of_features_to_identify_anomalies.png)
+
 ### Preprocessing Steps
 - Handling missing values (if any)
 - Feature scaling and encoding
@@ -82,6 +84,8 @@ The dataset includes hourly data for two years with the following features:
 ---
 
 ## 🔎 Exploratory Data Analysis (EDA)
+
+![Hourly Bicycle Rentals by Hour](bicycle_rentals_by_hour.png)
 
 EDA was performed to understand trends, patterns, and relationships:
 - Distribution of hourly rentals
@@ -113,6 +117,8 @@ Statistical tests were used to:
 
 📁 Script: `src/statistical_analysis.py`  
 📷 Output: `plots/statistical_analysis/`
+
+![Correlation Matrix of Features](correlation_matrix_of_features.png)
 
 ---
 
