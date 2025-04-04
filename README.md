@@ -19,7 +19,7 @@ I help organizations make smarter, faster decisions by leveraging data storytell
 | Project | Description |
 |--------|-------------|
 | [📈 Customer Segmentation with K-Means](projects/customer-segmentation/) | Clustered customers based on behavior & spending to guide targeted marketing |
-| [📊 Sales Performance Dashboard (Power BI)](dashboards/sales-performance/sales-performance.md) | Interactive dashboard for tracking sales KPIs and identifying underperforming products |
+| [📊 Sales & Production Insights Dashboard (Power BI)](dashboards/sales-production-insights/sales-production-insights.md) | Interactive dashboard for tracking sales KPIs and identifying underperforming products |
 | [🚲 Bicycle Rental Demand Forecasting](projects/bicycle-rental-prediction/) | Built regression models (XGBoost, LightGBM, Neural Network) to predict hourly bike rental volume based on weather and time features |
 
 > 📎 For more projects: explore the `projects/` and `dashboards/` folders in this repository.
