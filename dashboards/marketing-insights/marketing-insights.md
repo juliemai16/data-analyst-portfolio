@@ -6,7 +6,7 @@ This dashboard provides deep insights into the relationship between marketing ef
 
 👉 [Click here to view the Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjZhMTlhMWUtYzQ2Zi00Zjg4LThiMjYtZTZlZDUyMmJiMDBlIiwidCI6IjcyOWQ3ODc2LTg5MzQtNDljNi1iNTZlLTZjZTkwNjkzM2Y4YiIsImMiOjEwfQ%3D%3D)
 
-## 📌 Key Features
+## 🔍 Key Features
 ### 🔹 **Sales Overview**
 - Total Sales, Estimated Marketing Cost, and Sales-to-Marketing Spend Ratio
 - Monthly trends of sales vs. marketing cost
@@ -24,3 +24,6 @@ This dashboard helps marketing and business teams:
 - Understand the effectiveness of marketing spend
 - Identify patterns in customer acquisition and retention
 - Improve decision-making on campaign targeting and budget allocation
+
+## 📌 Use Case
+Useful for marketing teams to assess campaign effectiveness and customer behavior over time.

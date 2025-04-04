@@ -6,7 +6,7 @@ This Power BI dashboard tracks the sales performance of individual stores over t
 
 👉 [Click here to view the Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjkxOTA2YzUtOTQ0NS00ZTdhLThmNjgtNTExMzE1NjI4ODkxIiwidCI6IjcyOWQ3ODc2LTg5MzQtNDljNi1iNTZlLTZjZTkwNjkzM2Y4YiIsImMiOjEwfQ%3D%3D)
 
-## 📌 Key Features
+## 🔍 Key Features
 - **Headline KPIs**: Actual Sales, Target Sales, and overall variance
 - **Cumulative & Daily Tracking**: Track trends over time with cumulative and daily sales vs. targets
 - **Monthly Comparison**: Visual breakdown by month
@@ -19,3 +19,6 @@ This dashboard is designed to help:
 - Monitor store-level performance against strategic goals
 - Identify top and under-performing stores quickly
 - Support data-driven decisions on regional operations and store planning
+
+## 📌 Use Case
+Ideal for retail managers to evaluate store health and performance trends over time.

@@ -6,7 +6,7 @@ This interactive dashboard is designed to evaluate and monitor sales performance
 
 👉 [Click here to view the Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWVmY2RiZmItNGE2YS00ZGMzLWFlZGMtM2M0ZTczNDRlNWNlIiwidCI6IjcyOWQ3ODc2LTg5MzQtNDljNi1iNTZlLTZjZTkwNjkzM2Y4YiIsImMiOjEwfQ%3D%3D)
 
-## 📌 Key Features
+## 🔍 Key Features
 - **Monthly Sales Tracking**: Total Sales vs. Target for each month
 - **% Difference to Target**: Visualized with dynamic line and bar charts
 - **Top & Bottom Products**: Based on sales and gap to target
@@ -19,3 +19,6 @@ This dashboard was developed to help:
 - Monitor and track sales progress against targets
 - Identify high and under-performing products or sales reps
 - Enable timely decision-making to adjust sales strategies
+
+## 📌 Use Case
+Designed to help sales managers monitor performance, identify underperformers, and adjust strategy accordingly.

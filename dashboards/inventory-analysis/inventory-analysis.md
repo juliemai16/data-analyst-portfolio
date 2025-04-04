@@ -6,7 +6,7 @@ This dashboard provides a comprehensive view of current inventory levels, sales 
 
 👉 [Click here to view the Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2FlY2Q0ODQtMDRmZi00YWQ0LWIyODktOGM3NGNlYmZhNTlhIiwidCI6IjcyOWQ3ODc2LTg5MzQtNDljNi1iNTZlLTZjZTkwNjkzM2Y4YiIsImMiOjEwfQ%3D%3D)
 
-## 📌 Key Features
+## 🔍 Key Features
 - **Stock Overview**: Total inventory units, average daily sales, and forecasted end-of-month stock
 - **Inventory Forecasting**: Number of days stock will last based on sales rate
 - **Status Classification**: Flags low stock, out-of-stock, safe, and discontinued products
@@ -18,3 +18,6 @@ This dashboard is designed to help:
 - Prevent stockouts and overstock situations
 - Optimize replenishment planning
 - Maintain a healthy balance of inventory levels
+
+## 📌 Use Case
+Ideal for supply chain teams to maintain inventory health and avoid out-of-stock issues.
