@@ -42,7 +42,7 @@ The dataset includes the following fields:
 ---
 
 ## 🔍 Cluster Insights (Example)
-| Cluster | Recency | Frequency | Spend | Suggested Strategy |
+| Cluster | Recency | Frequency | Spend  | Suggested Strategy  |
 |---------|---------|-----------|--------|---------------------|
 | 0       | Low     | High      | High   | Loyalty program     |
 | 1       | High    | Low       | Low    | Reactivation offer  |
