@@ -62,4 +62,3 @@ The dataset includes the following fields:
 
 - `Deepdive by K-mean.ipynb`: Full analysis and clustering pipeline
 - `customer.csv`: Input dataset (not included here)
-"""
