@@ -61,4 +61,5 @@ The dataset includes the following fields:
 ## 🧾 Files
 
 - `Deepdive by K-mean.ipynb`: Full analysis and clustering pipeline
+- `Customer Segmentation Report`: Summary report of clustering results and business insights
 - `customer.csv`: Input dataset (not included here)
